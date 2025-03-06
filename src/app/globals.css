@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --breakpoint-xs: 412px;
+  --breakpoint-md: 769px;
+  --breakpoint-3xl: 1750px;
+
+  --aspect-ratio-cover: 1920 / 2150;
+  --aspect-ratio-home: 4 / 3;
+
+  --bg-image-grainy: url("/images/grainy-background.png");
+
+  --font-size-2xs: 0.8rem;
+  --line-height-2xs: 1.1rem;
+  --font-size-xs: 0.868rem;
+  --line-height-xs: 1.1875rem;
+  --font-size-sm: 1.042rem;
+  --line-height-sm: 1.375rem;
+  --letter-spacing-sm: 0em;
+  --font-size-base: 1.25rem;
+  --line-height-base: 1.6875rem;
+  --font-size-lg: 1.5rem;
+  --line-height-lg: normal;
+  --font-size-xl: 1.8rem;
+  --line-height-xl: normal;
+  --font-size-2xl: 2.16rem;
+  --line-height-2xl: normal;
+  --font-size-3xl: 2.592rem;
+  --line-height-3xl: normal;
+  --font-size-4xl: 3.11rem;
+  --line-height-4xl: normal;
+
+  --font-family-courier: var(--customCourier);
+  --font-family-main: var(--customMain);
+
+  --color-custom-white: #f8f8f8;
+  --color-custom-red: #dc2626;
+  --color-custom-green: #16a34a;
+  --color-custom-yellow: #fbbf24;
+  --color-custom-blue: #0066b3;
+  --color-custom-grey: #e4e4e7;
+  --color-custom-brown: #653d28;
+  --color-custom-brown-red: #ae201e;
+
+  --cursor-red-point: url(/images/cursore.png), auto;
+
+  --box-shadow-button: 0px 2.8px 1px 4px rgb(0 0 0 / 0.15);
+  --box-shadow-button-hover: 0px 3px 1px 4px rgb(0 0 0 / 0.25);
+  --box-shadow-button-active: 0px 2px 1px 3px rgb(0 0 0 / 0.25);
+  --box-shadow-arrow-active: 0px 4px 10px 3px rgb(0 0 0 / 0.1);
+
+  --transition-duration-4000: 300ms;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer components {
+  .main-grid {
+    @apply flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 gap-4 xl:gap-8;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+  }
+
+  .custom-indent {
+    @apply indent-7;
+  }
+
+  .responsive-home {
+    font-size: clamp(0.9rem, 1.1rem, 1.3rem);
+    line-height: clamp(0.8rem, 1.4rem, 2rem);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Global CSS */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+.link a {
+  @apply text-blue-500 font-bold;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
 }

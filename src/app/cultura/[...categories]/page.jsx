@@ -4,7 +4,7 @@ import fetchPortfolioData from "@/utils/fetchPortfolioData";
 import { Texts } from "@/texts/texts";
 import { Captions } from "@/texts/captions";
 import { renameCategory } from "@/texts/renameCategory";
-
+import PortfolioContainer from "@/components/Portfolio/PortfolioContainer/PortfolioContainer";
 // Generate static paths for all categories
 export async function generateStaticParams() {
   const portfolioData = await fetchPortfolioData("Cultura", 500);
@@ -43,5 +43,10 @@ export default async function CulturaCategories({ params }) {
   Captions(portfolioData["IMMAGINA"]["Cultura"]["Portfolio"]);
   renameCategory(portfolioData, "Gotthardbahn", "Gotthardbahn 2016");
 
-  return <div></div>;
+  return (
+    <PortfolioContainer
+      portfolioCultura={portfolioCultura}
+      categoriesFromPath={categoriesFromPath}
+    />
+  );
 }
