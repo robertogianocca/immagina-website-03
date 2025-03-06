@@ -103,7 +103,7 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
     /* ---------- PORTFOLIO ---------- */
     return (
       <div>
-        <NavigationBar menuColor="text-customRed hover:border-b-2 hover:border-customRed" />
+        <NavigationBar menuColor="text-custom-red hover:border-b-2 hover:border-custom-red" />
         <Wrapper>
           <motion.div
             className="text-customBrown"
