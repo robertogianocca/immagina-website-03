@@ -18,7 +18,7 @@ export default function VideoGallery({
 }) {
   return (
     <div className="flex flex-row h-screen w-full ">
-      <div className="z-50 w-[300px] lg:fixed  lg:h-screen overflow-auto flex-col justify-between p-5 bg-stone-100 text-base inner-shadow hidden lg:flex ">
+      <div className="hidden lg:block">
         <VideoGallerySideBar
           title={title}
           path={path}
@@ -30,10 +30,10 @@ export default function VideoGallery({
         <div className="relative w-full h-full">
           {/* TESTO */}
           <div className="flex flex-col lg:hidden mt-[60px] p-3">
-            <h1 className="text-xl sm:text-3xl font-bold font-courier text-customRed pb-2">
+            <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">
               {title}
             </h1>
-            <div className="text-2xs sm:text-base font-semibold text-customBrown">
+            <div className="text-2xs sm:text-base font-semibold text-custom-brown">
               {shortDescription}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function VideoGallery({
         </div>
       </div>
       {/* -------------------- MOBILE HEADER -------------------- */}
-      <div className="lg:hidden text-customBrown">
+      <div className="lg:hidden text-custom-brown">
         <PortfolioGalleryMobileHeader
           title={title}
           shortDescription={shortDescription}

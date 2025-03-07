@@ -9,6 +9,7 @@ import Logo from "@/components/Logo/Logo";
 import Button from "@/components/Buttons/Button";
 import { TiHome } from "react-icons/ti";
 import { FaArrowLeft } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const logoRed = "/images/logo/logo-immagina.svg";
 export default function VideoGallerySideBar({
@@ -26,31 +27,26 @@ export default function VideoGallerySideBar({
   }
 
   return (
-    <>
-      <div className="flex flex-col mb-2">
-        {/* ------ HOME E BACK BUTTONS ------ */}
-        <BackBar pathTree={["video"]} categoriesFromPath={["video"]} />
+    <motion.aside
+      initial={{ x: -300 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1.4, type: "spring", bounce: 0.2 }}
+      className="fixed h-full w-[300px] flex flex-col gap-y-10 overflow-auto p-5 pb-[70px]  bg-custom-grey text-custom-brown z-50"
+    >
+      {/* ------ HOME E BACK BUTTONS ------ */}
+      <BackBar pathTree={["video"]} categoriesFromPath={["video"]} />
 
-        {/* ------ PATH, TITLE, DESCRIPTION ------ */}
+      {/* ------ PATH, TITLE, DESCRIPTION ------ */}
 
-        <div className="pb-6">
-          <Head title={title} shortDescription={shortDescription} toggleTextBox={toggleTextBox} />
-        </div>
-        {/*  ------------ TEXT BOX DESCRIPTION ------------ */}
-        <TextBox
-          toggleTextBox={toggleTextBox}
-          isVisible={isVisible}
-          longDescription={longDescription}
-        />
-        {/* ------ HEADER: PATH, TITLE AND DESCRIPTION ------ */}
-        {/* <Header
-          title={title}
-          path={["Video"]}
-          shortDescription={shortDescription}
-          longDescription={longDescription}
-          setIsVisible={setIsVisible}
-        /> */}
+      <div className="pb-6">
+        <Head title={title} shortDescription={shortDescription} toggleTextBox={toggleTextBox} />
       </div>
-    </>
+      {/*  ------------ TEXT BOX DESCRIPTION ------------ */}
+      <TextBox
+        toggleTextBox={toggleTextBox}
+        isVisible={isVisible}
+        longDescription={longDescription}
+      />
+    </motion.aside>
   );
 }

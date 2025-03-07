@@ -5,7 +5,6 @@ import Wrapper from "@/components/Wrapper/Wrapper";
 import PortfolioCategoryCard from "@/components/Portfolio/PortfolioCategoryCard/PortfolioCategoryCard";
 import PortfolioGallery from "@/components/Portfolio/PortfolioGallery/PortfolioGallery";
 import PortfolioNavigation from "@/components/Portfolio/PortfolioNavigation/PortfolioNavigation";
-import Triangle from "@/components/Icons/Triangle";
 import { motion, easeIn } from "framer-motion";
 
 export default function PortfolioContainer({ portfolioCultura, categoriesFromPath }) {
