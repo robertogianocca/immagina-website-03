@@ -33,7 +33,7 @@ export default function Navigation({ picturesList, setIndex, currentIndex }) {
         } / ${picturesList.length}`}</h1>
       </div>
       {/* ------ Caption ------ */}
-      <div className="h-[40px] mb-6 bg-zinc-300 px-2 rounded-md flex items-center">
+      <div className="p-2 mb-6 bg-zinc-300 px-2 rounded-md flex items-center">
         <p className="text-xs italic font-semibold">
           {picturesList[currentIndex].shortDescription}
         </p>
