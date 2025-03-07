@@ -14,28 +14,28 @@
 
   --bg-image-grainy: url("/images/grainy-background.png");
 
-  --font-size-2xs: 0.8rem;
-  --line-height-2xs: 1.1rem;
-  --font-size-xs: 0.868rem;
-  --line-height-xs: 1.1875rem;
-  --font-size-sm: 1.042rem;
-  --line-height-sm: 1.375rem;
-  --letter-spacing-sm: 0em;
-  --font-size-base: 1.25rem;
-  --line-height-base: 1.6875rem;
-  --font-size-lg: 1.5rem;
-  --line-height-lg: normal;
-  --font-size-xl: 1.8rem;
-  --line-height-xl: normal;
-  --font-size-2xl: 2.16rem;
-  --line-height-2xl: normal;
-  --font-size-3xl: 2.592rem;
-  --line-height-3xl: normal;
-  --font-size-4xl: 3.11rem;
-  --line-height-4xl: normal;
+  --text-2xs: 0.8rem;
+  --text-2xs--line-height: 1.1rem;
+  --text-xs: 0.868rem;
+  --text-xs--line-height: 1.1875rem;
+  --text-sm: 1.042rem;
+  --text-sm--line-height: 1.375rem;
+  --text-sm--letter-spacing: 0em;
+  --text-base: 1.25rem;
+  --text-base--line-height: 1.6875rem;
+  --text-lg: 1.5rem;
+  --text-lg--line-height: normal;
+  --text-xl: 1.8rem;
+  --text-xl--line-height: normal;
+  --text-2xl: 2.16rem;
+  --text-2xl--line-height: normal;
+  --text-3xl: 2.592rem;
+  --text-3xl--line-height: normal;
+  --text-4xl: 3.11rem;
+  --text-4xl--line-height: normal;
 
-  --font-family-courier: var(--customCourier);
-  --font-family-main: var(--customMain);
+  --font-courier: var(--font-courier);
+  --font-inter: var(--font-inter);
 
   --color-custom-white: #f8f8f8;
   --color-custom-red: #dc2626;
@@ -72,7 +72,7 @@
   }
 
   .responsive-home {
-    font-size: clamp(0.9rem, 1.1rem, 1.3rem);
+    text: clamp(0.9rem, 1.1rem, 1.3rem);
     line-height: clamp(0.8rem, 1.4rem, 2rem);
   }
 }

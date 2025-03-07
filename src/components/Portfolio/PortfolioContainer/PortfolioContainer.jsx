@@ -24,10 +24,10 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
 
   let labelTitleColor = "";
   if (categoriesFromPath.length == 1) {
-    labelTitleColor = "border-l-customRed";
+    labelTitleColor = "border-l-custom-red";
   }
   if (categoriesFromPath.length == 2) {
-    labelTitleColor = "border-l-customGreen";
+    labelTitleColor = "border-l-custom-green";
   }
 
   /* ---------- CURRENT CATEGORY PORTFOLIO TREE ---------- */
@@ -53,7 +53,7 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
         href={`/cultura/${categoriesFromPath.slice(0, index + 1).join("/")}`}
         className="flex items-center"
       >
-        <Triangle color={index == 0 ? "border-l-customRed" : "border-l-customGreen"} />
+        <Triangle color={index == 0 ? "border-l-custom-red" : "border-l-custom-green"} />
         <p className="pl-1 pr-2">{item}</p>
       </Link>
     </div>
@@ -76,10 +76,10 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
 
     let labelColor = "";
     if (categoriesFromPath.length == 1) {
-      labelColor = "border-l-customGreen";
+      labelColor = "border-l-custom-green";
     }
     if (categoriesFromPath.length == 2) {
-      labelColor = "border-l-customYellow";
+      labelColor = "border-l-custom-yellow";
     }
 
     /* ---------- CARDS  ---------- */
@@ -106,7 +106,7 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
         <NavigationBar menuColor="text-custom-red hover:border-b-2 hover:border-custom-red" />
         <Wrapper>
           <motion.div
-            className="text-customBrown"
+            className="text-custom-brown"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
