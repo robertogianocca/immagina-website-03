@@ -41,7 +41,7 @@ export default function PortfolioGallerySideBar({
       initial={{ x: -300 }}
       animate={{ x: 0 }}
       transition={{ duration: 1.4, type: "spring", bounce: 0.2 }}
-      className="fixed h-full w-[300px] flex flex-col justify-between overflow-auto p-5 pb-[70px]bg-stone-100 text-customBrown z-50"
+      className="fixed h-full w-[300px] flex flex-col justify-between overflow-auto p-5 pb-[70px]  bg-custom-grey text-custom-brown z-50"
     >
       {/* ------ HOME, BACK BUTTONS, LOGO ------ */}
 

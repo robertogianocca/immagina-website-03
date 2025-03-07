@@ -15,14 +15,14 @@ export default function Navigation({ picturesList, setIndex, currentIndex }) {
         {/* ------ Left Arrow ------ */}
         <ArrowButton
           onClick={previousImage}
-          className="bg-zinc-150 text-stone-600 shadow-button flex items-center justify-center h-[65px] rounded-md"
+          className="text-stone-600 shadow-button flex items-center justify-center h-[65px] rounded-md"
         >
           <p className="font-courier font-bold text-4xl ">{"<"}</p>
         </ArrowButton>
         {/* ------ Right Arrow ------ */}
         <ArrowButton
           onClick={nextImage}
-          className="bg-zinc-150 text-stone-600 shadow-button flex items-center justify-center rounded-md"
+          className="text-stone-600 shadow-button flex items-center justify-center rounded-md"
         >
           <p className="text-4xl">{">"}</p>
         </ArrowButton>

@@ -18,7 +18,7 @@ export default function ArrowButton({ children, addClass, onClick }) {
         scale: 0.96,
         transition: { duration: 0.3 },
       }}
-      className={`bg-zinc-150 text-stone-600 transition-shadow duration-4000 shadow-button hover:shadow-buttonHover flex items-center justify-center rounded-md  ${addClass}`}
+      className={`bg-custom-white text-stone-600 transition-shadow duration-4000 shadow-button hover:shadow-buttonHover flex items-center justify-center rounded-md  ${addClass}`}
       onClick={onClick}
     >
       {children}
