@@ -42,6 +42,7 @@ export default async function CulturaCategories({ params }) {
   Texts(portfolioData["IMMAGINA"]["Cultura"]["Portfolio"]);
   Captions(portfolioData["IMMAGINA"]["Cultura"]["Portfolio"]);
   renameCategory(portfolioData, "Gotthardbahn", "Gotthardbahn 2016");
+  renameCategory(portfolioData, "Autostrada", "Autostrada Land Art");
   renameCategory(portfolioData, "Ticino", "Poesia Ticino");
 
   return (
