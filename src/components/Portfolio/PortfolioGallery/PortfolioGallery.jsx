@@ -36,7 +36,7 @@ export default function PortfolioGallery({
         />
         {/* ------ Caption ------ */}
         <div
-          className={`h-[40px] bg-customGrey px-2 flex items-center ${
+          className={`h-[40px] bg-custom-grey px-2 flex items-center ${
             !picturesList[index].shortDescription && "hidden"
           }`}
         >
@@ -56,7 +56,7 @@ export default function PortfolioGallery({
     );
 
   return (
-    <div className="flex h-screen w-full bg-customWhite">
+    <div className="flex h-screen w-full bg-custom-white">
       {/* -------------------- SIDEBAR -------------------- */}
       <div className="hidden lg:block">
         <PortfolioGallerySideBar
@@ -71,7 +71,7 @@ export default function PortfolioGallery({
         />
       </div>
       {/* -------------------- MOBILE HEADER -------------------- */}
-      <div className="lg:hidden text-customBrown">
+      <div className="lg:hidden text-custom-brown">
         <PortfolioGalleryMobileHeader
           title={title}
           shortDescription={shortDescription}
@@ -100,8 +100,8 @@ export default function PortfolioGallery({
       </div>
       {/* ---------- MOBILE GALLERY ---------- */}
       <div className="flex flex-col lg:hidden mt-[60px] p-3 pb-[100px]">
-        <h1 className="text-xl sm:text-3xl font-bold font-courier text-customRed pb-2">{title}</h1>
-        <div className="text-2xs sm:text-base font-semibold text-customBrown">
+        <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">{title}</h1>
+        <div className="text-2xs sm:text-base font-semibold text-custom-brown">
           {shortDescription}
         </div>
         <div className="flex flex-col gap-y-8">{mobileGallery}</div>

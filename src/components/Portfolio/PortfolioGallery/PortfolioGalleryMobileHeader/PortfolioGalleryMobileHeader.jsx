@@ -18,7 +18,7 @@ export default function PortfolioGalleryMobileHeader({ title, longDescription, p
   }
 
   return (
-    <nav className="w-full fixed left-0 top-0 z-50 p-4 pt-3 bg-customGrey">
+    <nav className="w-full fixed left-0 top-0 z-50 p-4 pt-3 bg-custom-grey">
       {/* ------ BACK BUTTONS, HOME ------ */}
       <div className="flex flex-row justify-between gap-5">
         <div className="flex gap-5">
