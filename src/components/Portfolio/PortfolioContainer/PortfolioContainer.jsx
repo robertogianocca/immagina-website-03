@@ -53,8 +53,8 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
         href={`/cultura/${categoriesFromPath.slice(0, index + 1).join("/")}`}
         className="flex items-center"
       >
-        <Triangle color={index == 0 ? "border-l-custom-red" : "border-l-custom-green"} />
-        <p className="pl-1 pr-2">{item}</p>
+        {">"}
+        <p className="pl-1 pr-2 hover:text-custom-red transition-all">{item}</p>
       </Link>
     </div>
   ));
@@ -116,6 +116,7 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
               title={currentCategoryName}
               longDescription={currentCategoryPortfolio.pictures[0].longDescription}
               path={mappedPath}
+              pathTree={pathTree}
               labelColor={labelTitleColor}
             />
 

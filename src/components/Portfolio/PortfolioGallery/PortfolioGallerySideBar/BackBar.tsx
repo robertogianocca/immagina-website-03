@@ -9,7 +9,7 @@ interface typeProps {
 
 export default function BackBar({ pathTree }: typeProps) {
   return (
-    <div className="flex flex-row gap-5 pb-4">
+    <div className="flex flex-row gap-5">
       <Link href={`/cultura/${pathTree.join("/")}`}>
         <Button addClass="p-2 text-slate-400">
           <FaArrowLeft size={25} />

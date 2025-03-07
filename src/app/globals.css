@@ -9,11 +9,6 @@
   --breakpoint-2xl: 1536px;
   --breakpoint-3xl: 1750px;
 
-  --aspect-ratio-cover: 1920 / 2150;
-  --aspect-ratio-home: 4 / 3;
-
-  --bg-image-grainy: url("/images/grainy-background.png");
-
   --text-2xs: 0.8rem;
   --text-2xs--line-height: 1.1rem;
   --text-xs: 0.868rem;
@@ -47,6 +42,11 @@
   --color-custom-brown-red: #ae201e;
 
   --cursor-red-point: url(/images/cursore.png), auto;
+
+  --aspect-ratio-cover: 1920 / 2150;
+  --aspect-ratio-home: 4 / 3;
+
+  --bg-image-grainy: url("/images/grainy-background.png");
 
   --box-shadow-button: 0px 2.8px 1px 4px rgb(0 0 0 / 0.15);
   --box-shadow-button-hover: 0px 3px 1px 4px rgb(0 0 0 / 0.25);
