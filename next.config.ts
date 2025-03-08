@@ -33,6 +33,10 @@ const nextConfig: NextConfig = {
         source: "/autostrada",
         destination: "/cultura/photography/drone/autostrada-land-art",
       },
+      {
+        source: "/private-galleries/museo-mendrisio",
+        destination: "/ingeborg",
+      },
       // Add more as needed...
     ];
   },
