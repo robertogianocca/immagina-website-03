@@ -80,7 +80,10 @@ export default function PortfolioGallery({
         />
       </div>
       {/* ---------- IMAGE CONTAINER DESKTOP---------- */}
-      <div className="hidden lg:block ml-[300px] p-4 pl-10 pb-10 z-10">
+      <div
+        className="hidden lg:block ml-[300px] p-4 pl-10 pb-10 z-10"
+        onContextMenu={(e) => e.preventDefault()}
+      >
         <div className="relative w-full h-full">
           {/* {coverTitle} */}
           {/* <div className={`flex items-center w-full h-full ${currentIndex === 0 && "pt-[6rem]"}`}> */}
@@ -105,7 +108,9 @@ export default function PortfolioGallery({
         <div className="text-2xs sm:text-base font-semibold text-custom-brown">
           {shortDescription}
         </div>
-        <div className="flex flex-col gap-y-8">{mobileGallery}</div>
+        <div className="flex flex-col gap-y-8" onContextMenu={(e) => e.preventDefault()}>
+          {mobileGallery}
+        </div>
       </div>
     </div>
   );

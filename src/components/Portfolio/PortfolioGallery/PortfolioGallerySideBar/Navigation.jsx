@@ -27,17 +27,20 @@ export default function Navigation({ picturesList, setIndex, currentIndex }) {
           <p className="text-4xl">{">"}</p>
         </ArrowButton>
         {/* ------ Index ------ */}
-
-        <h1 className="my-6 text-stone-600 col-span-2 flex items-center justify-center text-base">{`${
-          currentIndex + 1
-        } / ${picturesList.length}`}</h1>
+        <div className="flex col-span-2 justify-center my-4">
+          <h1 className=" text-stone-600  text-base">{`${currentIndex + 1} / ${
+            picturesList.length
+          }`}</h1>
+        </div>
       </div>
       {/* ------ Caption ------ */}
-      <div className="p-2 mb-6 bg-zinc-300 px-2 rounded-md flex items-center">
-        <p className="text-xs italic font-semibold">
-          {picturesList[currentIndex].shortDescription}
-        </p>
-      </div>
+      {picturesList[currentIndex].shortDescription && (
+        <div className="h-[5rem] mb-6">
+          <p className="flex items-center p-2 rounded-md bg-zinc-300 text-xs italic font-semibold">
+            {picturesList[currentIndex].shortDescription}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

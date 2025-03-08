@@ -62,7 +62,7 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
   ));
 
   return (
-    <div className="mb-3">
+    <div className="h-[260px] mb-3">
       <div className="w-full grid grid-cols-5 gap-2">{mappedThumbnails}</div>
       {totalPages > 1 && <div className="flex justify-center mt-2">{mappedDots}</div>}
     </div>
