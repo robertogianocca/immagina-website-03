@@ -27,6 +27,38 @@ export const Texts = (portfolioCultura) => {
     </div>
   );
 
+  /* -------------------- DRONE - ROMANICO -------------------- */
+
+  const romanico = portfolioCultura["Photography"]["Drone"]["Romanico"].pictures[0];
+
+  romanico.alt = "Chiesa Romanica di Negrentino";
+
+  romanico.shortDescription = (
+    <div>
+      <p>
+        Da tempo prepariamo un’ampia documentazione sul Romanico in Ticino. L’interesse è rivolto
+        alla loro ubicazione sul territorio ticinese e le qualità architettoniche (Biasca, Giornico,
+        Negrentino). Percorsi sacri che accompagnavano i viandanti diretti verso il Nord dei
+        protestanti…
+      </p>
+    </div>
+  );
+
+  romanico.longDescription = (
+    <div>
+      <p>
+        Da tempo prepariamo un’ampia documentazione sul Romanico in Ticino. Il nostro interesse è
+        rivolto alla qualità estetiche delle chiese e la loro ubicazione sul territorio ticinese.
+        Più di cento luoghi sacri accompagnano i viandanti diretti verso il nord, il Nord dei
+        protestanti… quei protestanti che rappresentavano una minaccia per la Chiesa Cattolica
+        Romana. San Cristoforo è il patrono di chi se mette in cammino. Questo spiega la sua
+        presenza nei preziosi affreschi (Giubiasco, Ravecchia, Monte Carasso, Malvaglia, …) che
+        decorano le chiese romaniche nella nostra regione soprattutto a partire da Bellinzona dove
+        iniziava la traversata delle Alpi.
+      </p>
+    </div>
+  );
+
   /* -------------------- DRONE - AUTOSTRADA -------------------- */
 
   const autostrada = portfolioCultura["Photography"]["Drone"]["Autostrada"].pictures[0];
