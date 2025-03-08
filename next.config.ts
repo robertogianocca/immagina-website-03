@@ -34,8 +34,8 @@ const nextConfig: NextConfig = {
         destination: "/cultura/photography/drone/autostrada-land-art",
       },
       {
-        source: "/private-galleries/museo-mendrisio",
-        destination: "/ingeborg",
+        source: "/ingeborg",
+        destination: "/private-galleries/museo-mendrisio",
       },
       // Add more as needed...
     ];
