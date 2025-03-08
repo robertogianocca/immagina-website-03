@@ -14,3 +14,5 @@ export async function GET(request) {
 
   return NextResponse.json({ revalidated: true, now: Date.now() });
 }
+
+// http://localhost:3000/api/revalidate?secret=4944mTzTzvlsNTz&path=/private-galleries/museo-mendrisio

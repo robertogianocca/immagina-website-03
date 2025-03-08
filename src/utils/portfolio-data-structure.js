@@ -8,11 +8,13 @@ export const getDataStructure = (cloudinaryResponse) => {
 
     let longDescription = null;
     let shortDescription = null;
+    let indexNumber = null;
     const alt = "Image";
 
     if (context?.custom) {
       longDescription = context.custom.alt || null;
       shortDescription = context.custom.caption || null;
+      indexNumber = context.custom.index || null;
     }
 
     const folders = folder.split("/");
@@ -29,6 +31,7 @@ export const getDataStructure = (cloudinaryResponse) => {
         folderNode.pictures = folderNode.pictures || [];
         folderNode.pictures.push({
           fileName,
+          indexNumber,
           url,
           public_id,
           longDescription,

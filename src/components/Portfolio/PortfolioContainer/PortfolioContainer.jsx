@@ -5,7 +5,7 @@ import Wrapper from "@/components/Wrapper/Wrapper";
 import PortfolioCategoryCard from "@/components/Portfolio/PortfolioCategoryCard/PortfolioCategoryCard";
 import PortfolioGallery from "@/components/Portfolio/PortfolioGallery/PortfolioGallery";
 import PortfolioNavigation from "@/components/Portfolio/PortfolioNavigation/PortfolioNavigation";
-import { motion, easeIn } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function PortfolioContainer({ portfolioCultura, categoriesFromPath }) {
   /* ---------- CURRENT CATEGORY NAME ---------- */
@@ -65,8 +65,21 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
     (item) => item.toLowerCase() !== "pictures"
   );
 
-  const mappedSubCategories = subCategories.map((item, index) => {
-    const formattedItem = item.toLowerCase().replace(/\s+/g, "-").replace("a's-s", "a-s");
+  // Create an array of subcategories with their cover images and indexNumber
+  const subCategoriesWithIndex = subCategories.map((item) => {
+    const coverImage = currentCategoryPortfolio[item].pictures[0];
+    return {
+      name: item,
+      coverImage: coverImage,
+      indexNumber: coverImage.indexNumber || 0, // Default to 0 if indexNumber doesn't exist
+    };
+  });
+
+  // Sort the subcategories based on the indexNumber of their cover images
+  subCategoriesWithIndex.sort((a, b) => a.indexNumber - b.indexNumber);
+
+  const mappedSubCategories = subCategoriesWithIndex.map((item, index) => {
+    const formattedItem = item.name.toLowerCase().replace(/\s+/g, "-").replace("a's-s", "a-s");
     const formattedPath = categoriesFromPath
       .map((category) => category.toLowerCase().replace(/\s+/g, "-"))
       .join("/");
@@ -85,11 +98,11 @@ export default function PortfolioContainer({ portfolioCultura, categoriesFromPat
 
     return (
       <PortfolioCategoryCard
-        key={index + item}
-        title={item}
-        shortDescription={currentCategoryPortfolio[item].pictures[0].shortDescription}
-        cover={currentCategoryPortfolio[item].pictures[0].url}
-        coverAlt={currentCategoryPortfolio[item].pictures[0].alt}
+        key={index + item.name}
+        title={item.name}
+        shortDescription={item.coverImage.shortDescription}
+        cover={item.coverImage.url}
+        coverAlt={item.coverImage.alt}
         labelColor={labelColor}
         hrefLink={`/cultura/${formattedPath}/${formattedItem}`}
       />
