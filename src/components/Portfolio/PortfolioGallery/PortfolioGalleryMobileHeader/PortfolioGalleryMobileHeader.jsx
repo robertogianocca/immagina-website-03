@@ -36,8 +36,9 @@ export default function PortfolioGalleryMobileHeader({ title, longDescription, p
             {"Read"}
           </Button>
         </div>
+        {/* ------ TITLE ------ */}
         <div className="flex gap-10">
-          <h1 className="text-sm font-bold font-courier pt-3">{title}</h1>
+          <h1 className="text-xs font-bold font-courier pt-3">{title}</h1>
         </div>
       </div>
       {/*  ------------ TEXT BOX DESCRIPTION ------------ */}
