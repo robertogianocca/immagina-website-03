@@ -31,7 +31,7 @@ export const CaptionsPrivate = (portfolioCultura) => {
     "Pesto cotonese",
     "Corridoio del Museo con affresco barocco",
     "A destra: Perché tu possa camminare a Venezia senza che nessuno ti riconosca – mantello mimetico per uomo ricercato (1998). A sinistra: Herry e Una (1981)",
-    "A destra: Perché tu possa camminare a Venezia senza che nessuno ti riconosca – mantello mimetico per uomo ricercato (1998). A sinistra: Herry e Una (1981). Al fondo: I giardini pensili di Semiramide (1999-20249)",
+    "A destra: Perché tu possa camminare a Venezia senza che nessuno ti riconosca – mantello mimetico per uomo ricercato (1998). A sinistra: Herry e Una (1981). Al fondo: I giardini pensili di Semiramide (1999-2024)",
     "A destra: Perché tu possa camminare a Venezia senza che nessuno ti riconosca – mantello mimetico per uomo ricercato (1998). A sinistra: Herry e Una (1981). Al fondo: I giardini pensili di Semiramide (1999-2024)",
     "Perché tu possa camminare a Venezia senza che nessuno ti riconosca – mantello mimetico per uomo ricercato (1998). Alle pareti: Herry e Una (1981) e Senza titolo (Nuvola, 1986) ",
     "Corridoio lato est del Museo: Documentazione su Armand Schulthess, Versione VI. (1972-2024)",
