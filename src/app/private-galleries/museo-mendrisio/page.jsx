@@ -1,5 +1,6 @@
 import fetchPortfolioData from "@/utils/fetchPortfolioData";
 import PortfolioGallery from "@/components/Portfolio/PortfolioGallery/PortfolioGallery";
+import { CaptionsPrivate } from "@/app/private-galleries/captionsPrivate";
 
 export default async function MuseoMendrisio() {
   const portfolioData = await fetchPortfolioData("Gallerie%20Private", 200);
@@ -13,6 +14,7 @@ export default async function MuseoMendrisio() {
   }
 
   const portfolioCultura = portfolioData["IMMAGINA"]["Gallerie Private"];
+  CaptionsPrivate(portfolioCultura);
 
   return (
     <div>

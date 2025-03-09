@@ -39,7 +39,7 @@ export default function PortfolioGallery({
         />
         {/* ------ Caption ------ */}
         <div
-          className={`max-h-[5rem] text-custom-brown bg-custom-grey p-2 flex items-center ${
+          className={`text-custom-brown bg-custom-grey p-2 flex items-center ${
             !picturesList[index].shortDescription && "hidden"
           }`}
         >
@@ -49,14 +49,14 @@ export default function PortfolioGallery({
     );
   });
 
-  const coverTitle =
-    currentIndex === 0 ? (
-      <div className="lg:absolute lg:left-0 lg:right-0 lg:top-0 mb-2 lg:m-auto lg:p-2 lg:aspect-cover lg:h-full">
-        <h1 className="font-courier font-bold text-2xl lg:text-4xl text-red-600">{title}</h1>
-      </div>
-    ) : (
-      ""
-    );
+  // const coverTitle =
+  //   currentIndex === 0 ? (
+  //     <div className="lg:absolute lg:left-0 lg:right-0 lg:top-0 mb-2 lg:m-auto lg:p-2 lg:aspect-cover lg:h-full">
+  //       <h1 className="font-courier font-bold text-2xl lg:text-4xl text-red-600">{title}</h1>
+  //     </div>
+  //   ) : (
+  //     ""
+  //   );
 
   return (
     <div className="flex h-screen w-full bg-custom-white">
@@ -108,7 +108,8 @@ export default function PortfolioGallery({
       {/* ---------- MOBILE GALLERY ---------- */}
       <div className="flex flex-col min-h-screen overflow-y-auto lg:hidden mt-[60px] p-3 pb-[90px]">
         <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">{title}</h1>
-        <div className="text-2xs sm:text-base font-semibold text-custom-brown">
+        {/* ---------- DESCRIPTION ---------- */}
+        <div className="text-2xs sm:text-base font-semibold text-custom-brown pb-4">
           {shortDescription}
         </div>
         <div className="flex flex-col gap-y-8" onContextMenu={(e) => e.preventDefault()}>

@@ -10,7 +10,7 @@ export default function Navigation({ picturesList, setIndex, currentIndex }) {
   }
 
   return (
-    <div>
+    <div className="h-[17rem]">
       <div className="grid grid-cols-2 gap-4 font-courier font-bold">
         {/* ------ Left Arrow ------ */}
         <ArrowButton
@@ -35,12 +35,23 @@ export default function Navigation({ picturesList, setIndex, currentIndex }) {
       </div>
       {/* ------ Caption ------ */}
       {picturesList[currentIndex].shortDescription && (
+        <div className="mb-6">
+          <p
+            className={`flex items-center p-2 rounded-md bg-zinc-300 ${
+              picturesList[currentIndex].shortDescription.length >= 100 ? "text-2xs" : "text-xs"
+            } italic font-semibold`}
+          >
+            {picturesList[currentIndex].shortDescription}
+          </p>
+        </div>
+      )}
+      {/* {picturesList[currentIndex].shortDescription && (
         <div className="h-[5rem] mb-6">
           <p className="flex items-center p-2 rounded-md bg-zinc-300 text-xs italic font-semibold">
             {picturesList[currentIndex].shortDescription}
           </p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
