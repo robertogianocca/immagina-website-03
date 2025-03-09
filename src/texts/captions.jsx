@@ -12,7 +12,7 @@ export const Captions = (portfolioCultura) => {
     }
   };
 
-  const captionRenzoFontana = ["Tomba di Giovanni Züst a Basilea", "Mostra “openair” a Balerna"];
+  // const captionRenzoFontana = ["Tomba di Giovanni Züst a Basilea", "Mostra “openair” a Balerna"];
 
   const captionTicino = [
     "Chiesa di Negrentino, Romanico XI sec. Dedicata a Sant’Ambrogio, Prugiasco, Valle di Blenio",
@@ -61,6 +61,40 @@ export const Captions = (portfolioCultura) => {
   addCaptions(
     portfolioCultura["Photography"]["Drone"]["Gotthardbahn"].images.pictures,
     captionGottardo
+  );
+
+  const captionRomanico = [
+    "Negrentino (valle di Blenio) San Carlo (XI sec.) sulla via di transito verso il passo del Nara",
+    "Negrentino (valle di Blenio) San Carlo (XI sec.) sulla via di transito verso il passo del Nara",
+    "Negrentino (valle di Blenio) San Carlo (XI sec.) sulla via di transito verso il passo del Nara",
+    "Negrentino (valle di Blenio) San Carlo (XI sec.) sulla via di transito verso il passo del Nara",
+    "Biasca San Pietro e Paolo (XII sec.)",
+    "Biasca San Pietro e Paolo (XII sec.)",
+    "Giornico Santa Maria del Castello (XII sec.) e chiesa di San Nicolao nel fondo valle vicino alla ferrovia",
+    "Chiggiogna Santa Maria Assunta (XIII sec.)",
+    "Giubiasco Santa Maria Assunta (XII sec.)",
+    "Giubiasco Santa Maria Assunta (XII sec.)",
+    "Giubiasco Santa Maria Assunta (XII sec.)",
+    "Giubiasco Santa Maria Assunta (XII sec.)",
+    "Ravecchia (Bellinzona) San Biagio (XII-XV sec.)",
+    "Ravecchia (Bellinzona) San Biagio (XII-XV sec.)",
+    "Arbedo San Paolo (o chiesa Rossa) ricostruita dopo 1422",
+    "Mezzovico San Mamete (1055 e ampliata XV-XVI sec.)",
+    "Mezzovico San Mamete (1055 e ampliata XV-XVI sec.)",
+    "Mezzovico San Mamete (1055 e ampliata XV-XVI sec.)",
+    "Lugano Alto medievale e ricostruita nel XV sec. San Lorenzo (cattedrale)",
+    "Lugano Alto medievale e ricostruita nel XV sec. San Lorenzo (cattedrale)",
+    "Lugano Alto medievale e ricostruita nel XV sec. San Lorenzo (cattedrale)",
+    "Sureggio San Pietro e Paolo (X sec.)",
+    "Sureggio San Pietro e Paolo (X sec.)",
+    "Sureggio San Pietro e Paolo (X sec.)",
+    "Rovio San Virgilio (XI sec.)",
+    "Rovio San Virgilio (XI sec.)",
+  ];
+
+  addCaptions(
+    portfolioCultura["Photography"]["Drone"]["Romanico"].images.pictures,
+    captionRomanico
   );
 
   const captionFinziPasca = [

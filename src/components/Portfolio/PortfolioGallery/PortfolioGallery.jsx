@@ -21,6 +21,9 @@ export default function PortfolioGallery({
     setImageQuality(70);
   };
 
+  {
+    /* -------------------- MOBILE GALLERY -------------------- */
+  }
   const mobileGallery = picturesList.map((item, index) => {
     return (
       <div key={index}>
@@ -36,7 +39,7 @@ export default function PortfolioGallery({
         />
         {/* ------ Caption ------ */}
         <div
-          className={`h-[40px] bg-custom-grey px-2 flex items-center ${
+          className={`max-h-[5rem] text-custom-brown bg-custom-grey p-2 flex items-center ${
             !picturesList[index].shortDescription && "hidden"
           }`}
         >
