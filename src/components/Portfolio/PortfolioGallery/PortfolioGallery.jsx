@@ -82,22 +82,22 @@ export default function PortfolioGallery({
           pathTree={pathTree}
         />
       </div>
-      {/* ---------- IMAGE CONTAINER DESKTOP---------- */}
+      {/* ---------- IMAGE CONTAINER DESKTOP ---------- */}
       <div
-        className="hidden lg:block ml-[300px] p-4 pl-10 pb-10 z-10"
+        className="hidden lg:block ml-[300px] p-4 pb-10 z-10 h-screen"
         onContextMenu={(e) => e.preventDefault()}
       >
-        <div className="relative w-full h-full">
-          {/* {coverTitle} */}
-          {/* <div className={`flex items-center w-full h-full ${currentIndex === 0 && "pt-[6rem]"}`}> */}
-          <div className={`flex items-center w-full h-full`}>
+        {/* Centering Container */}
+        <div className="flex justify-center items-center w-full h-full">
+          {/* Image Wrapper */}
+          <div className="relative w-full h-full flex justify-center items-center">
             <Image
               priority={true}
               src={picturesList[currentIndex].url}
-              alt={picturesList[currentIndex].alt || { title }}
+              alt={picturesList[currentIndex].alt || title}
               width={picturesList[currentIndex].width}
               height={picturesList[currentIndex].height}
-              className="object-contain max-w-full max-h-full "
+              className="object-contain max-w-full max-h-full"
               onLoad={handleImageLoad}
               quality={imageQuality}
               sizes="(max-width: 1200px) 100vw, 70vw"
@@ -106,7 +106,7 @@ export default function PortfolioGallery({
         </div>
       </div>
       {/* ---------- MOBILE GALLERY ---------- */}
-      <div className="flex flex-col lg:hidden mt-[60px] p-3 pb-[100px]">
+      <div className="flex flex-col min-h-screen overflow-y-auto lg:hidden mt-[60px] p-3 pb-[90px]">
         <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">{title}</h1>
         <div className="text-2xs sm:text-base font-semibold text-custom-brown">
           {shortDescription}
