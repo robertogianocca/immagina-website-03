@@ -37,6 +37,10 @@ const nextConfig: NextConfig = {
         source: "/ingeborg",
         destination: "/private-galleries/museo-mendrisio",
       },
+      {
+        source: "/pietro-leemann",
+        destination: "/private-galleries/pietro-leemann",
+      },
       // Add more as needed...
     ];
   },

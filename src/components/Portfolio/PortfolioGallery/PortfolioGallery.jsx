@@ -84,7 +84,7 @@ export default function PortfolioGallery({
       </div>
       {/* ---------- IMAGE CONTAINER DESKTOP ---------- */}
       <div
-        className="hidden lg:block ml-[300px] p-4 pb-10 z-10 h-screen"
+        className="hidden lg:block ml-[300px] p-4 pb-10 z-10 h-screen w-full"
         onContextMenu={(e) => e.preventDefault()}
       >
         {/* Centering Container */}
@@ -100,7 +100,7 @@ export default function PortfolioGallery({
               className="object-contain max-w-full max-h-full"
               onLoad={handleImageLoad}
               quality={imageQuality}
-              sizes="(max-width: 1200px) 100vw, 70vw"
+              sizes="(max-width: 1400px) 100vw, 70vw"
             />
           </div>
         </div>
