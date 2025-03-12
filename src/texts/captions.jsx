@@ -12,7 +12,7 @@ export const Captions = (portfolioCultura) => {
     }
   };
 
-  // const captionRenzoFontana = ["Tomba di Giovanni Züst a Basilea", "Mostra “openair” a Balerna"];
+  /// const captionRenzoFontana = ["Tomba di Giovanni Züst a Basilea", "Mostra “openair” a Balerna"];
 
   const captionPietroLeemann = [
     "Piatto non solo buono ma anche bello, sempre presentato con un pizzico di umore e sempre sorprendente.",
