@@ -14,6 +14,30 @@ export const Captions = (portfolioCultura) => {
 
   // const captionRenzoFontana = ["Tomba di Giovanni Züst a Basilea", "Mostra “openair” a Balerna"];
 
+  const captionPietroLeemann = [
+    "Piatto non solo buono ma anche bello, sempre presentato con un pizzico di umore e sempre sorprendente.",
+    "Splüi chez Pietro presso Giumaglio, (Valle Maggia), dove maturano i formaggi",
+    "Ritratto di Pietro Leemann",
+    "Paesaggio interiore",
+    "Resti di un frugale pasto (degli scoiattoli) nel bosco di Giumaglio",
+    "Appunti di viaggio",
+    "Cammino verso la cascata (Giumaglio, valle Maggia)",
+    "Titolo dimenticato",
+    "Sotto la coltre colorata: Spuma decorata con petali di fiori",
+    "Pozz’ Froda: Cascata di Giumaglio in Valle Maggia",
+    "Quello che mangerei tutti i giorni",
+    "L’uovo apparente",
+    "Muschio su pietra nel bosco di Giumaglio, valle Maggia",
+    "Umami, il sesto gusto che affascina",
+    "Omaggio alla cucina giapponese (titolo descrittivo)",
+    "Gong: il celebre dessert di Joia (Ristorante), servito con un tocco di gong",
+  ];
+
+  addCaptions(
+    portfolioCultura["Photography"]["Gastronomia"]["Pietro Leemann"].images.pictures,
+    captionPietroLeemann
+  );
+
   const captionTicino = [
     "Chiesa di Negrentino, Romanico XI sec. Dedicata a Sant’Ambrogio, Prugiasco, Valle di Blenio",
     "Chiesa di Negrentino, Romanico XI sec. Dedicata a Sant’Ambrogio, Prugiasco, Valle di Blenio",

@@ -1,4 +1,63 @@
 export const Texts = (portfolioCultura) => {
+  /* -------------------- GASTRONOMIA -------------------- */
+
+  const gastronomia = portfolioCultura["Photography"]["Gastronomia"].pictures[0];
+
+  gastronomia.alt = "Gastronomia";
+
+  gastronomia.shortDescription = (
+    <div>
+      <p>
+        “Siamo ciò che mangiamo”. Uno dei piaceri della vita è, senza ombra di dubbio, mettersi a
+        tavola e degustare convivialmente le creazioni provenienti dalla cucina. Solo il fotografo
+        conosce le difficoltà per fare delle belle immagini di “food”.
+      </p>
+    </div>
+  );
+
+  gastronomia.longDescription = (
+    <div>
+      <p>
+        “Siamo ciò che mangiamo”. Uno dei piaceri della vita è, senza ombra di dubbio, mettersi a
+        tavola e degustare (convivialmente) le creazioni provenienti dalla cucina. Solo il fotografo
+        conosce le difficoltà per fare delle belle immagini di “food”.
+      </p>
+    </div>
+  );
+  /* -------------------- GASTRONOMIA - PIETRO LEEMANN -------------------- */
+
+  const pietroLeemann =
+    portfolioCultura["Photography"]["Gastronomia"]["Pietro Leemann"].pictures[0];
+
+  pietroLeemann.alt = "Gastronomia";
+
+  pietroLeemann.shortDescription = (
+    <div>
+      <p>
+        lo Chef. Prima stella Michelin con il suo ristorante vegetariano, il Joia, di Milano.
+        Apostolo di una “cucina senza violenza” e con una cucina di forte spiritualità orientale. Il
+        suo motto: “Siamo ciò che mangiamo”.
+      </p>
+    </div>
+  );
+
+  pietroLeemann.longDescription = (
+    <div>
+      <p>
+        Pietro Leemann ha lasciato in mano ai suoi giovani cuochi il suo Ristorante Joia, (via
+        Panfilo Castaldi 18 a Milano) per dedicarsi al suo nuovo progetto, Fondazione Terra Vecchia
+        a Palagnedra. Un centro spirituale a tutto tondo che naturalmente include, oltre
+        all’Ayurveda, la gastronomia raffinata (vegetariana/vegana) intesa come alimentazione per lo
+        spirito. Pietro Leemann è dunque tornato in Ticino, vive a Giumaglio. Ispirato dall’amico di
+        famiglia Angelo Conti-Rossini (Brissago) ha lavorato con i grandi chef Fredy Girardet
+        (Crissier) e Gualtiero Marchesi (Milano). Soggiorni in Cina, Giappone e India e rientro in
+        Europa. Nel 1989 apre con amici il Ristorante Joia che ha gestito con grande successo fino
+        alla fine 2024. Numerosi i suoi libri che rccomandiamo di tutto cuore. Le foto che qui
+        presentiamo sono quelle commissionate da TicinoSette anni addietro ma sempre attuali.
+      </p>
+    </div>
+  );
+
   /* -------------------- DRONE  -------------------- */
 
   const drone = portfolioCultura["Photography"]["Drone"].pictures[0];
