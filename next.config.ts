@@ -23,6 +23,16 @@ const nextConfig: NextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/cultura",
+        permanent: true, // Uses 308 status code (permanent redirect)
+        // Use false for a temporary redirect (307 status code)
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
