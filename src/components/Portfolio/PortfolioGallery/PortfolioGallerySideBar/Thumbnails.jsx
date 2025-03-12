@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
   const [currentThumbPage, setCurrentThumbPage] = useState(1);
@@ -27,13 +28,30 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
     setIndex(index);
   }
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05, // Controls delay between children
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8, y: 20 },
+    show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.3 } },
+  };
+
   // Mapped thumbnails
   const mappedThumbnails = currentData.map((item, index) => {
     const globalIndex = (currentThumbPage - 1) * itemsPerPage + index;
     return (
-      <div
+      <motion.div
         className={`${currentIndex === globalIndex ? "aspect-square" : "aspect-square opacity-60"}`}
         key={globalIndex}
+        variants={itemVariants}
       >
         <button onClick={() => selectThumbnail(globalIndex)} className="w-full h-full">
           <Image
@@ -46,7 +64,7 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
             quality={2}
           />
         </button>
-      </div>
+      </motion.div>
     );
   });
 
@@ -63,7 +81,14 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
 
   return (
     <div className="h-[260px] mb-3">
-      <div className="w-full grid grid-cols-5 gap-2">{mappedThumbnails}</div>
+      <motion.div
+        className="w-full grid grid-cols-5 gap-2"
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+      >
+        {mappedThumbnails}
+      </motion.div>
       {totalPages > 1 && <div className="flex justify-center mt-2">{mappedDots}</div>}
     </div>
   );
