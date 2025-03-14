@@ -27,7 +27,6 @@ export default function PortfolioCategoryCard({
           transition: { duration: 0.7, ease: "easeInOut" }, // Return timing
         }}
         whileHover={{
-          rotate: 0.9,
           scale: 1.02,
           transition: { duration: 0.7, bounce: 0.3 },
         }}
