@@ -9,7 +9,7 @@ const menuItems = ["Portfolio", "Team"];
 export default function NavigationBar({ color, menuColor, bgColor }) {
   return (
     <nav
-      className={`w-full h-[60px] fixed left-0 top-0 main-grid flex-row justify-between px-4 lg:px-6 xl:pl-14 xl:pr-24 z-50 bg-custom-white`}
+      className={`w-full h-[60px] fixed left-0 top-0 main-grid justify-between px-4 lg:px-6 xl:pl-14 xl:pr-24 z-50 overflow-hidden bg-custom-white`}
     >
       {/* ---------- LOGO ---------- */}
       <div className="pt-2">
