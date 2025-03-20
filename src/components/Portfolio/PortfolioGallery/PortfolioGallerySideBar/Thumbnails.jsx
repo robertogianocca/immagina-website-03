@@ -61,7 +61,7 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
             loading="eager"
             width={30}
             height={30}
-            quality={2}
+            quality={30}
           />
         </button>
       </motion.div>

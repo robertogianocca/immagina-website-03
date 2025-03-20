@@ -77,16 +77,17 @@ export default async function Cultura() {
           </div>
         </section>
         {/* ---------- TEAM SECTION ---------- */}
-        <section id="team" className="min-h-space pt-4 xl:pt-8 px-4 lg:px-6 xl:pl-14 xl:pr-24 pb-4">
-          <div className="grid grid-cols-3  gap-4 xl:gap-8 xl:pb-20">
-            <h2 className="text-3xl xl:text-4xl font-courier font-bold mb-6 col-span-1">Team</h2>
-            <div className="xl:block col-span-2">
-              {/* <p className="hidden xl:block text-base font-semibold col-span-2 ">
+        <section
+          id="team"
+          className="h-space lg:min-h-[calc(100vh-60px)] pt-4 xl:pt-8 px-4 lg:px-6 xl:pl-14 xl:pr-24 pb-20"
+        >
+          <h2 className="text-3xl xl:text-4xl font-courier font-bold mb-6 col-span-1">Team</h2>
+          <div className="xl:block col-span-2">
+            {/* <p className="hidden xl:block text-base font-semibold col-span-2 ">
                 {
                   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took."
                 }
               </p> */}
-            </div>
           </div>
           <TeamSection />
         </section>

@@ -22,7 +22,7 @@ const mappedTeam = teamList.map((item, index) => (
 
 export default function TeamSection() {
   return (
-    <div className="flex flex-col xl:grid md:grid-cols-2 2xl:grid-cols-3 gap-y-10 xl:gap-6">
+    <div className="flex flex-col xl:grid md:grid-cols-2 2xl:grid-cols-6 gap-y-10 xl:gap-6">
       {mappedTeam}
     </div>
   );
