@@ -6,6 +6,12 @@ import IntroSection from "@/components/Sections/IntroSection/IntroSection";
 import TeamSection from "@/components/Sections/TeamSection/TeamSection";
 import PortfolioCategoryCard from "@/components/Portfolio/PortfolioCategoryCard/PortfolioCategoryCard";
 
+export const metadata = {
+  title: "IMMAGINA",
+  description:
+    "Come il sarto confeziona l'abito, IMMAGINA confeziona la tua immagine, la tua comunicazione.",
+};
+
 export default async function Cultura() {
   const portfolioData = await fetchPortfolioData("Cultura", 500);
 
