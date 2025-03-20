@@ -1,12 +1,16 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import RedButton from "@/components/Buttons/RedButton";
-import Triangle from "@/components/Icons/Triangle";
+import { motion } from "framer-motion";
 
 export default function IntroSection({ text }) {
   return (
-    <div className="h-full sm:h-auto flex flex-col justify-between sm:justify-no sm:grid sm:grid-cols-3 sm:gap-4 xl:gap-x-8 pb-6 lg:pb-[30px] font-bold">
+    <motion.div
+      className="h-full sm:h-auto flex flex-col justify-between sm:justify-no sm:grid sm:grid-cols-3 sm:gap-4 xl:gap-x-8 pb-6 lg:pb-[30px] font-bold"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.2 }}
+    >
       <div className="flex flex-col sm:col-span-2 lg:col-span-1 text-sm xl:text-base">
         {text}
         <Link href="#portfolio">
@@ -27,6 +31,6 @@ export default function IntroSection({ text }) {
       >
         <source src="/video/animazione-bosco-01.mp4" type="video/mp4" />
       </video>
-    </div>
+    </motion.div>
   );
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import PortfolioGallerySideBar from "./PortfolioGallerySideBar/PortfolioGallerySideBar";
 import PortfolioGalleryMobileHeader from "@/components/Portfolio/PortfolioGallery/PortfolioGalleryMobileHeader/PortfolioGalleryMobileHeader";
+import { motion } from "framer-motion";
 
 export default function PortfolioGallery({
   currentCategoryPortfolio,
@@ -83,9 +84,12 @@ export default function PortfolioGallery({
         />
       </div>
       {/* ---------- IMAGE CONTAINER DESKTOP ---------- */}
-      <div
+      <motion.div
         className="hidden lg:block ml-[300px] p-4 pb-10 z-10 h-screen w-full"
         onContextMenu={(e) => e.preventDefault()}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
         {/* Centering Container */}
         <div className="flex justify-center items-center w-full h-full">
@@ -104,7 +108,7 @@ export default function PortfolioGallery({
             />
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* ---------- MOBILE GALLERY ---------- */}
       <div className="flex flex-col min-h-screen overflow-y-auto lg:hidden mt-[60px] p-3 pb-[90px]">
         <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">{title}</h1>
