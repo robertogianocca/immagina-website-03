@@ -8,6 +8,8 @@ import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import PortfolioTitleNavigation from "@/components/Portfolio/PortfolioTitleNavigation/PortfolioTitleNavigation";
 import PortfolioCategoryCard from "@/components/Portfolio/PortfolioCategoryCard/PortfolioCategoryCard";
 import PortfolioContainer from "@/components/Portfolio/PortfolioContainer/PortfolioContainer";
+import { motion } from "framer-motion";
+import PortfolioNavigation from "@/components/Portfolio/PortfolioNavigation/PortfolioNavigation";
 
 const portfolioCultura = {
   Video: {
@@ -60,10 +62,52 @@ const portfolioCultura = {
   },
 };
 
+const mappedVideo = videoDatabaseCultura.map((item, index) => {
+  return (
+    <div className="w-full h-full relative flex flex-col gap-4 lg:gap-y-4 bg-zinc-50 shadow-xl transition-all duration-1000 hover:shadow-slate-600 shadow-slate-400">
+      <h2 className="pt-4 px-4 font-courier font-bold text-lg xl:text-xl">{item.title}</h2>
+      <div className="hidden px-4 md:block lg:w-[80%] text-2xs xl:text-xs font-semibold opacity-85">
+        {item.shortDescription}
+      </div>
+      <div className="w-full aspect-video">
+        <iframe
+          src={item.videoLink}
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          className="w-full h-full"
+          title={item.title}
+        ></iframe>
+      </div>
+    </div>
+  );
+});
+
 export default function VideoPage() {
   return (
     <>
-      <PortfolioContainer portfolioCultura={portfolioCultura} categoriesFromPath={["video"]} />
+      <div className="">
+        <NavigationBar menuColor="text-custom-red hover:border-b-2 hover:border-custom-red" />
+        <Wrapper addClass="!px-0 lg:!px-4 xl:!pl-14 xl:!pr-24">
+          <motion.div
+            className="text-custom-brown"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            {/* ---------- Portfolio Navigation ---------- */}
+            {/* <PortfolioNavigation
+              title={""}
+              longDescription={""}
+              path={"mappedPath"}
+              pathTree={["R", "RE"]}
+              labelColor={"labelTitleColor"}
+            /> */}
+
+            {/* ---------- Card List ---------- */}
+            <ul className="video-grid">{mappedVideo}</ul>
+          </motion.div>
+        </Wrapper>
+      </div>
+      {/* <PortfolioContainer portfolioCultura={portfolioCultura} categoriesFromPath={["video"]} /> */}
     </>
   );
 }
