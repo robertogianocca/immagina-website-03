@@ -2,11 +2,6 @@
 import Image from "next/image";
 import VideoGallerySideBar from "./VideoGallerySideBar/VideoGallerySideBar";
 import PortfolioGalleryMobileHeader from "@/components/Portfolio/PortfolioGallery/PortfolioGalleryMobileHeader/PortfolioGalleryMobileHeader";
-import { useState } from "react";
-import Button from "@/components/Buttons/Button";
-import { IoMdCloseCircle } from "react-icons/io";
-
-import { motion, AnimatePresence } from "framer-motion";
 
 export default function VideoGallery({
   videoLink,
@@ -26,7 +21,7 @@ export default function VideoGallery({
           longDescription={longDescription}
         />
       </div>
-      <div className="lg:ml-[300px] flex-grow p-4 lg:pl-10 pb-10 bg-white">
+      <div className="lg:ml-[300px] flex-grow  lg:pl-10 pb-10 bg-white">
         <div className="relative w-full h-full">
           {/* TESTO */}
           <div className="flex flex-col lg:hidden mt-[60px] p-3">
