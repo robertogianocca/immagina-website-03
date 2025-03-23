@@ -94,13 +94,15 @@ export default function VideoPage() {
             transition={{ duration: 1, delay: 0.2 }}
           >
             {/* ---------- Portfolio Navigation ---------- */}
-            {/* <PortfolioNavigation
-              title={""}
-              longDescription={""}
-              path={"mappedPath"}
-              pathTree={["R", "RE"]}
-              labelColor={"labelTitleColor"}
-            /> */}
+            <div className="px-4 pt-4 lg:p-0">
+              <PortfolioNavigation
+                title={"Video"}
+                longDescription={""}
+                path={""}
+                pathTree={["", ""]}
+                labelColor={"labelTitleColor"}
+              />
+            </div>
 
             {/* ---------- Card List ---------- */}
             <ul className="video-grid">{mappedVideo}</ul>
