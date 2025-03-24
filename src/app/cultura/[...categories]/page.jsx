@@ -5,6 +5,22 @@ import { Texts } from "@/texts/texts";
 import { Captions } from "@/texts/captions";
 import { renameCategory } from "@/utils/renameCategory";
 import PortfolioContainer from "@/components/Portfolio/PortfolioContainer/PortfolioContainer";
+
+// Generate metadata dynamically
+export async function generateMetadata({ params }) {
+  const category = params.categories?.join(" / ") || "Cultura";
+  return {
+    title: `IMMAGINA Cultura - ${category} `,
+    description: `Esplora la galleria fotografica "${category}".`,
+    // openGraph: {
+    //   title: `IMMAGINA Cultura - ${category} `,
+    //   description: `Scopri i progetti di cultura nella categoria ${category}.`,
+    //   url: `/cultura/${params.categories?.join("/")}`,
+    //   type: "website",
+    // },
+  };
+}
+
 // Generate static paths for all categories
 export async function generateStaticParams() {
   const portfolioData = await fetchPortfolioData("Cultura", 500);
