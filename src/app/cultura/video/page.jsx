@@ -11,6 +11,12 @@ import PortfolioContainer from "@/components/Portfolio/PortfolioContainer/Portfo
 import { motion } from "framer-motion";
 import PortfolioNavigation from "@/components/Portfolio/PortfolioNavigation/PortfolioNavigation";
 
+export const metadata = {
+  title: "IMMAGINA Cultura - Video",
+  description:
+    "IMMAGINA offre servizi video a tutto tondo. Produciamo di preferenza film per artisti, musicisti, attori, teatri, festival, matrimoni.",
+};
+
 const portfolioCultura = {
   Video: {
     CARIE: {
@@ -19,7 +25,7 @@ const portfolioCultura = {
           url: "https://res.cloudinary.com/immagina/image/upload/v1732543369/IMMAGINA/Video/thumb-carie_dbccnk.jpg",
           public_id: "IMMAGINA/Cultura/Portfolio/Photography/Fotografia_-_Cover_igvggl",
           longDescription:
-            "CHo pensato che l’arrampicata potesse ridare dignità a queste montagne ferite”. Con queste parole Marzio introduce il progetto Carie. Carie è un progetto crossmediale indipendente a cura di Achille Mauri, Marzio Nardi e Federico Ravassard. Narra di Carrara e delle sue cave. Il film scava nel passato,  presente e futuro di Carrara. Protagonisti gli arrampicatori, minatori, geologi, ambientalisti di tutta Italia. Tuono Blu, (nickname di Roberto Gianocca/IMMAGINA) è stato integrato del team quale cameraman/dronista, collaborato nella postproduzione e nell’animazione 3D del logo.",
+            "Ho pensato che l’arrampicata potesse ridare dignità a queste montagne ferite”. Con queste parole Marzio introduce il progetto Carie. Carie è un progetto crossmediale indipendente a cura di Achille Mauri, Marzio Nardi e Federico Ravassard. Narra di Carrara e delle sue cave. Il film scava nel passato,  presente e futuro di Carrara. Protagonisti gli arrampicatori, minatori, geologi, ambientalisti di tutta Italia. Tuono Blu, (nickname di Roberto Gianocca/IMMAGINA) è stato integrato del team quale cameraman/dronista, collaborato nella postproduzione e nell’animazione 3D del logo.",
           shortDescription:
             "Film sulle cave di Carrara. Un film realizzato con un gruppo di appassionati (della vita: cavisti, geologi, ambientalisti, scalatori, cineasti) hanno dialogato con la cava del Michelangelo, interrogandosi su passato presente e futuro del celebre marmo.",
           width: 800,
