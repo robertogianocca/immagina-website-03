@@ -102,3 +102,10 @@ h1 {
   margin: 0px;
   padding: 0px;
 }
+
+@supports not (display: grid) {
+  .main-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

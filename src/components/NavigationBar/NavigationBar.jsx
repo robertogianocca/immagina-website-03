@@ -15,7 +15,7 @@ export default function NavigationBar({ color, menuColor, bgColor }) {
       <div className="pt-3 sm:pt-2">
         <Link href="/cultura">
           <Logo logo={logoRed} />
-          <p className="text-custom-red font-courier font-bold">cultura</p>
+          <h1 className="text-custom-red font-courier font-bold">cultura</h1>
         </Link>
       </div>
       {/* ---------- MENU ---------- */}

@@ -7,7 +7,7 @@ import TeamSection from "@/components/Sections/TeamSection/TeamSection";
 import PortfolioCategoryCard from "@/components/Portfolio/PortfolioCategoryCard/PortfolioCategoryCard";
 
 export const metadata = {
-  title: "IMMAGINA Cultura",
+  title: "IMMAGINA | Cultura",
   description:
     "Come il sarto confeziona l'abito, IMMAGINA confeziona la tua immagine, la tua comunicazione.",
   alternates: {
@@ -27,6 +27,9 @@ export default async function Cultura() {
   }
 
   const portfolioCultura = portfolioData["IMMAGINA"]["Cultura"]["Portfolio"];
+
+  const photographyData = portfolioCultura?.["Photography"]?.pictures?.[0];
+
   return (
     <div className="text-custom-brown">
       <NavigationBar
@@ -74,8 +77,8 @@ export default async function Cultura() {
             <PortfolioCategoryCard
               title="Photography"
               hrefLink="/cultura/photography"
-              cover={portfolioCultura["Photography"].pictures[0].url}
-              shortDescription={portfolioCultura["Photography"].pictures[0].shortDescription}
+              cover={photographyData?.url || "/images/card-default-image.jpg"} // Fallback image
+              shortDescription={photographyData?.shortDescription || "Descrizione non disponibile"}
             />
             <PortfolioCategoryCard
               title="Video"
@@ -91,13 +94,6 @@ export default async function Cultura() {
           className="h-space lg:min-h-[calc(100vh-60px)] pt-4 xl:pt-8 px-4 lg:px-6 xl:pl-14 xl:pr-24 pb-20"
         >
           <h2 className="text-3xl xl:text-4xl font-courier font-bold mb-6 col-span-1">Team</h2>
-          <div className="xl:block col-span-2">
-            {/* <p className="hidden xl:block text-base font-semibold col-span-2 ">
-                {
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took."
-                }
-              </p> */}
-          </div>
           <TeamSection />
         </section>
       </main>

@@ -14,7 +14,10 @@ export default function IntroSection({ text }) {
       <div className="flex flex-col sm:col-span-2 lg:col-span-1 text-sm xl:text-base">
         {text}
         <Link href="#portfolio">
-          <RedButton addClass="p-2 px-3 text-base xl:text-xl font-courier mb-6 lg:font-light">
+          <RedButton
+            addClass="p-2 px-3 text-base xl:text-xl font-courier mb-6 lg:font-light"
+            aria-label="Vai alla sezione Portfolio"
+          >
             Portfolio
           </RedButton>
         </Link>
@@ -26,10 +29,14 @@ export default function IntroSection({ text }) {
         muted
         loop
         playsInline
+        aria-hidden="true" // Screen readers will ignore this
         poster="https://res.cloudinary.com/immagina/image/upload/v1741783185/IMMAGINA/Home%20Page/animazione-bosco-01_placeholder_axwgq7.jpg"
         className="sm:col-span-3 lg:col-span-2 object-cover lg:object-contain object-bottom sm:object-top w-full h-[50vh] xs:h-[70vh] md:max-h-[calc(100vh-478px)] lg:h-full lg:max-h-[calc(100vh-135px)] 2xl:w-full 2xl:h-auto 2xl:max-h-auto 2xl:object-cover 2xl:object-top"
       >
-        <source src="/video/animazione-bosco-01.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/immagina/video/upload/v1742935045/IMMAGINA/Home%20Page/animazione-bosco-01_zqfkbg.mp4"
+          type="video/mp4"
+        />
       </video>
     </motion.div>
   );
