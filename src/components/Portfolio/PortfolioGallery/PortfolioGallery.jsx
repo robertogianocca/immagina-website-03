@@ -27,12 +27,17 @@ export default function PortfolioGallery({
   }
   const mobileGallery = picturesList.map((item, index) => {
     return (
-      <div key={index}>
+      <motion.div
+        key={index}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 + index * 0.3 }} // Stagger effect
+      >
         <Image
-          src={picturesList[index].url}
-          alt={picturesList[index].alt}
-          width={picturesList[index].width}
-          height={picturesList[index].height}
+          src={item.url}
+          alt={item.alt}
+          width={item.width}
+          height={item.height}
           sizes="(max-width: 1200px) 100vw, 70vw"
           priority={true}
           quality={imageQuality}
@@ -41,12 +46,12 @@ export default function PortfolioGallery({
         {/* ------ Caption ------ */}
         <div
           className={`text-custom-brown bg-custom-grey p-2 flex items-center ${
-            !picturesList[index].shortDescription && "hidden"
+            !item.shortDescription && "hidden"
           }`}
         >
-          <p className="text-xs italic font-semibold">{picturesList[index].shortDescription}</p>
+          <p className="text-xs italic font-semibold">{item.shortDescription}</p>
         </div>
-      </div>
+      </motion.div>
     );
   });
 
@@ -112,7 +117,7 @@ export default function PortfolioGallery({
       {/* ---------- MOBILE GALLERY ---------- */}
       <div className="flex flex-col min-h-screen overflow-y-auto lg:hidden mt-[60px] p-3 pb-[90px]">
         <h1 className="text-xl sm:text-3xl font-bold font-courier text-custom-red pb-2">{title}</h1>
-        {/* ---------- DESCRIPTION ---------- */}
+        {/* ---------- MOBILE GALLERY DESCRIPTION ---------- */}
         <div className="text-2xs sm:text-base font-semibold text-custom-brown pb-4">
           {shortDescription}
         </div>

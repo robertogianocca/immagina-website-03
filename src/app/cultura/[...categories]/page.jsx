@@ -8,9 +8,9 @@ import PortfolioContainer from "@/components/Portfolio/PortfolioContainer/Portfo
 
 // Generate metadata dynamically
 export async function generateMetadata({ params }) {
-  const category = params.categories?.join(" / ") || "Cultura";
+  const par = await params;
+  const category = par.categories[0];
   return {
-    title: `IMMAGINA Cultura - ${category} `,
     description: `Esplora la galleria fotografica "${category}".`,
     // openGraph: {
     //   title: `IMMAGINA Cultura - ${category} `,

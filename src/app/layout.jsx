@@ -18,9 +18,12 @@ const courierPrime = Courier_Prime({
 });
 
 export const metadata = {
-  title: "IMMAGINA",
+  title: "IMMAGINA | Cultura",
   description:
     "Come il sarto confeziona l'abito, IMMAGINA confeziona la tua immagine, la tua comunicazione.",
+  alternates: {
+    canonical: "https://immagina.ch/cultura",
+  },
 };
 
 export default function RootLayout({ children }) {
