@@ -11,7 +11,7 @@ export default function IntroSection({ text }) {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.2 }}
     >
-      <div className="flex flex-col sm:col-span-2 lg:col-span-1 text-sm xl:text-base">
+      <div className="flex flex-col item sm:col-span-2 lg:col-span-1 text-sm xl:text-base">
         {text}
         <Link href="#portfolio">
           <RedButton

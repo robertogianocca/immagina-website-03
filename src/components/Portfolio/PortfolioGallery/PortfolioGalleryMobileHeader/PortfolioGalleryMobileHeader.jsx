@@ -18,21 +18,21 @@ export default function PortfolioGalleryMobileHeader({ title, longDescription, p
   }
 
   return (
-    <nav className="w-full fixed left-0 top-0 z-50 p-4 pt-3 bg-custom-grey">
+    <nav className="w-full fixed left-0 top-0 z-50 pt-3 p-4 bg-custom-grey h-[60px]">
       {/* ------ BACK BUTTONS, HOME ------ */}
       <div className="flex flex-row justify-between gap-5">
-        <div className="flex gap-5">
+        <div className="flex gap-5 h-9">
           <Link href={`/cultura/${pathTree.join("/")}`}>
-            <Button addClass="w-8">
+            <Button addClass="w-9">
               <FaArrowLeft size={20} />
             </Button>
           </Link>
           <Link href="/cultura">
-            <Button addClass="w-8">
+            <Button addClass="w-9">
               <TiHome size={20} />
             </Button>
           </Link>
-          <Button onClick={openTextBox} addClass="h-full p-1 text-xs font-bold">
+          <Button onClick={openTextBox} addClass="h-full p-1 px-2 text-xs font-bold">
             {"Read"}
           </Button>
         </div>

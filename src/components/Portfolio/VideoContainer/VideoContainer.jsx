@@ -88,7 +88,9 @@ export default function VideoContainer() {
           <div className="px-4 pt-4 lg:p-0">
             <PortfolioNavigation
               title={"Video"}
-              longDescription={""}
+              longDescription={
+                "Produciamo corto e lungo metraggi. Produciamo di preferenza documentari per artisti, e manifestazioni culturali. Anche matrimoni per gente simpatica. Per imprenditori simpatici e con umore produciamo volontieri spot pubblicitari, simpatici e … naturalmente ci integriamo volentieri a un più esteso team per prestar servizi quali riprese, riprese con droni, montaggio, color balancing, prise de son, produzione di colonne sonore, eccetera eccetera."
+              }
               path={""}
               pathTree={["", ""]}
               labelColor={"labelTitleColor"}
