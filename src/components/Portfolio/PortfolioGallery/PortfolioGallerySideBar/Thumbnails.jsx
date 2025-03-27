@@ -49,7 +49,9 @@ export default function Thumbnails({ picturesList, setIndex, currentIndex }) {
     const globalIndex = (currentThumbPage - 1) * itemsPerPage + index;
     return (
       <motion.div
-        className={`${currentIndex === globalIndex ? "aspect-square" : "aspect-square opacity-60"}`}
+        className={`${
+          currentIndex === globalIndex ? "aspect-square !opacity-40" : "aspect-square opacity-60"
+        }`}
         key={globalIndex}
         variants={itemVariants}
       >

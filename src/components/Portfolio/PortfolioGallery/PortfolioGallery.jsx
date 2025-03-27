@@ -4,6 +4,7 @@ import Image from "next/image";
 import PortfolioGallerySideBar from "./PortfolioGallerySideBar/PortfolioGallerySideBar";
 import PortfolioGalleryMobileHeader from "@/components/Portfolio/PortfolioGallery/PortfolioGalleryMobileHeader/PortfolioGalleryMobileHeader";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function PortfolioGallery({
   currentCategoryPortfolio,
@@ -21,6 +22,26 @@ export default function PortfolioGallery({
   const handleImageLoad = () => {
     setImageQuality(70);
   };
+
+  //   --------------------------------- KEYBOARD NAVIGATION ---------------------------------
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.keyCode) {
+        case 37:
+          currentIndex == 0 ? setIndex(picturesList.length - 1) : setIndex(currentIndex - 1);
+          break;
+        case 39:
+          currentIndex == picturesList.length - 1 ? setIndex(0) : setIndex(currentIndex + 1);
+          break;
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [currentIndex, picturesList.length, setIndex]);
 
   {
     /* -------------------- MOBILE GALLERY -------------------- */
