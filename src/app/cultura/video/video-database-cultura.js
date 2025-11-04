@@ -1,6 +1,6 @@
 export const videoDatabaseCultura = [
   {
-    title: "Matt Pascale & The Stomps - Sugar Mama",
+    title: "SUGAR MAMA",
     link: "video/sugar-mama",
     description: "",
     shortDescription: "",
