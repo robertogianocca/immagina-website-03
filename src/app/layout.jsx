@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Courier_Prime } from "next/font/google";
 import { Inter } from "next/font/google";
+import { Blinker } from "next/font/google";
 
 // Globals font
 const inter = Inter({
@@ -17,6 +18,13 @@ const courierPrime = Courier_Prime({
   variable: "--font-courier",
 });
 
+const blinker = Blinker({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"],
+  // fallback: ["arial"],
+  variable: "--font-blinker",
+});
+
 export const metadata = {
   title: "IMMAGINA | Cultura",
   description:
@@ -28,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="it" className={`${courierPrime.variable} ${inter.variable}`}>
+    <html lang="it" className={`${courierPrime.variable} ${inter.variable} ${blinker.variable}`}>
       <body className="font-main bg-slate-50">{children}</body>
     </html>
   );

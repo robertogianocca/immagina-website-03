@@ -1,6 +1,6 @@
 export const videoDatabaseCultura = [
   {
-    title: "SUGAR MAMA",
+    title: "Sugar Mama",
     link: "video/sugar-mama",
     description: "",
     shortDescription: "",
@@ -9,7 +9,7 @@ export const videoDatabaseCultura = [
       "https://player.vimeo.com/video/1132948199?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   },
   {
-    title: "HOT SKY",
+    title: "Hot Sky",
     link: "video/hot-sky",
     description: "",
     shortDescription: "",

@@ -59,8 +59,10 @@ export default function VideoContainer() {
   const mappedVideo = videoDatabaseCultura.map((item, index) => {
     return (
       <div className="w-full h-full relative flex flex-col gap-4 lg:gap-y-4 bg-zinc-50 shadow-xl transition-all duration-1000 hover:shadow-slate-600 shadow-slate-400 ">
-        <h2 className="pt-4 px-4 font-courier font-bold text-xl xl:text-xl">{item.title}</h2>
-        <div className="hidden px-4 md:block lg:w-[80%] text-2xs xl:text-xs font-semibold opacity-85 min-h-[90px] md:min-h-[90px]  2xl:min-h-[75px]">
+        <h2 className="pt-4 px-4 lg:px-6 font-blinker font-semibold text-2xl xl:text-2xl">
+          {item.title}
+        </h2>
+        <div className="hidden px-4 lg:px-6 md:block lg:w-[80%] text-2xs xl:text-xs font-semibold opacity-85 min-h-[90px] md:min-h-[90px]  2xl:min-h-[75px]">
           {item.shortDescription || " "}
         </div>
         <div className="w-full aspect-video">
