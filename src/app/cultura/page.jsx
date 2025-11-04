@@ -83,7 +83,9 @@ export default async function Cultura() {
             <PortfolioCategoryCard
               title="Video"
               hrefLink="/cultura/video"
-              shortDescription="IMMAGINA offre servizi video a tutto tondo. Produciamo di preferenza documentari per artisti, musicisti, attori, teatri, festival, matrimoni: per gente simpatica only."
+              shortDescription="IMMAGINA offre servizi video a tutto tondo. 
+              
+              Realizziamo film indipendenti e video per musicisti, teatri, festival, matrimoni, ...  Preferibilmente per persone simpatiche."
               cover="https://res.cloudinary.com/immagina/image/upload/v1733128441/IMMAGINA/Video/Video_-_Cover_kvdqep.jpg"
             />
           </div>

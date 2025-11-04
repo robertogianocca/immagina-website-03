@@ -90,7 +90,7 @@ export default function VideoContainer() {
             <PortfolioNavigation
               title={"Video"}
               longDescription={
-                "Produciamo corto e lungo metraggi. Produciamo di preferenza documentari per artisti, e manifestazioni culturali. Anche matrimoni per gente simpatica. Per imprenditori simpatici e con umore produciamo volontieri spot pubblicitari, simpatici e … naturalmente ci integriamo volentieri a un più esteso team per prestar servizi quali riprese, riprese con droni, montaggio, color balancing, prise de son, produzione di colonne sonore, eccetera eccetera."
+                "Realizziamo corto e lungometraggi indipendenti. Realizziamo videoclip per musicisti, documentari per artisti e manifestazioni culturali. Anche matrimoni per persone simpatiche. Per imprenditori simpatici e con umore produciamo volontieri spot pubblicitari, simpatici e… naturalmente estendiamo il team ai nostri collaboratori per prestar servizi quali riprese, riprese con droni, montaggio, post-produzione, prise de son, produzione di colonne sonore, eccetera eccetera."
               }
               path={""}
               pathTree={["", ""]}
