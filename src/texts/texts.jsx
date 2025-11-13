@@ -354,14 +354,15 @@ export const Texts = (portfolioCultura) => {
     <div>
       <p>
         La Prima ebbe luogo a Mosca nell’ottobre del 1993. Lo{" "}
-        <span className="italic">Slava's Snowshow</span> è lo spettacolo creato e messo in scena
+        <span class="italic">Slava's Snowshow</span> è lo spettacolo creato e messo in scena
         dall'artista russo Slava Polunin. Poesia sulle orme di{" "}
-        <span className="italic">
-          Puškin, Gogol, Čechov, Kandinsky, Chagall, Ėjzenštejn, Tarkovskij, Stravinskij, Prokofiev.
+        <span class="italic">
+          Pushkin, Gogol, Chekhov, Kandinsky, Chagall, Eisenstein, Tarkovsky, Stravinsky, Prokofiev.
         </span>
       </p>
     </div>
   );
+
   slava.longDescription = (
     <div>
       <p>
@@ -369,28 +370,29 @@ export const Texts = (portfolioCultura) => {
       </p>
       <br></br>
       <p>
-        La Prima ebbe luogo a Mosca nell’ottobre del 1993. Lo
-        <span className="italic">Slava's Snowshow</span> è lo spettacolo creato e messo in scena
-        dall'artista russo Slava Polunin. Poesia sulle orme di
-        <span className="italic">
-          Puškin, Gogol, Čechov, Kandinsky, Chagall, Ėjzenštejn, Tarkovskij, Stravinskij, Prokofiev.
+        La Prima ebbe luogo a Mosca nell’ottobre del 1993. Lo{" "}
+        <span class="italic">Slava's Snowshow</span> è lo spettacolo creato e messo in scena
+        dall'artista russo Slava Polunin. Poesia sulle orme di{" "}
+        <span class="italic">
+          Pushkin, Gogol, Chekhov, Kandinsky, Chagall, Eisenstein, Tarkovsky, Stravinsky, Prokofiev.
         </span>
       </p>
       <p>
         Da allora migliaia di rappresentazioni, milioni di spettatori di tutto il mondo, di ogni
         età, nazionalità, credo; chi ricco, chi povero: tutti rimaniamo ammagliati, incantati,
         stregati da questi clown, personaggi dalla triste figura. Adulti e bambini e anziani sono
-        catapultati nella propria infanzia: sogni, ricordi, nostalgia fanno dello SnowShow di Slava
-        una esperienza indimenticabile. Le diverse scene rimangono impresse nella memoria: hanno
-        suscitano ilarità, stupore, sorrisi: mai la risata sfrenata.
+        catapultati nella propria infanzia: sogni, ricordi, nostalgia fanno dello{" "}
+        <span className="italic">SnowShow</span> di Slava una esperienza indimenticabile. Le diverse
+        scene rimangono impresse nella memoria: suscitano ilarità, stupore, sorrisi.
       </p>
       <p className="custom-indent">
         Lo spettacolo sfugge a qualsiasi definizione. Che sorpresa quella allegra bolgia finale in
         sala quando la tormenta di neve e giganteschi palloni straripano dal palco inondando gli
         spettatori. Polverizzata è la linea di demarcazione tra palco e platea. Lo stesso pubblico
-        ritornerà a teatro ogni volta, a rivedere e a rivivere lo SnowShow, come una cerimonia, come
-        un rituale magico.<span className="italic"> Au revoir Slava</span>. Tu, comico, malinconico,
-        drammatico artista. Tu clown in esilio, apostolo della fratellanza.
+        ritornerà a teatro ogni volta, a rivedere e a rivivere lo{" "}
+        <span className="italic">SnowShow</span>, come una cerimonia, come un rituale magico.
+        <span className="italic"> Au revoir Slava</span>. Tu, comico, malinconico, drammatico
+        artista. Tu clown in esilio, apostolo della fratellanza.
       </p>
     </div>
   );
