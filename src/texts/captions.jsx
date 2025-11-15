@@ -123,7 +123,7 @@ export const Captions = (portfolioCultura) => {
 
   const captionFinziPasca = [
     "Donka",
-    "Ritratto Daniele Finzi Pasca",
+    "Ritratto di Daniele Finzi Pasca",
     "Nebbia",
     "Donka",
     "Verità",

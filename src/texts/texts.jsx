@@ -400,8 +400,9 @@ export const Texts = (portfolioCultura) => {
     <div>
       <p>
         Sin da bambino è affascinato dalle acrobazie. Icaro Daniele fa sul serio. È regista,
-        cresciuto in Ticino, cittadino del mondo. Cirque du Soleil; Olimpiadi; Fête des vignerons.
-        Aida, Carmen, Pagliacci. Čechov e Dalì in compagnia di tanti tanti Rinoceronti ed Elefanti.
+        cresciuto in Ticino, cittadino del mondo. Cirque du Soleil, Olimpiadi, Fête des Vignerons.
+        <span className="italic"> Aida, Carmen, Pagliacci</span>. Chekhov e Dalì in compagnia di
+        tanti tanti Rinoceronti ed Elefanti.
       </p>
     </div>
   );
@@ -410,8 +411,9 @@ export const Texts = (portfolioCultura) => {
     <div>
       <p>
         Sin da bambino è affascinato dalle acrobazie. Icaro Daniele fa sul serio. È regista,
-        cresciuto in Ticino, cittadino del mondo. Cirque du Soleil; Olimpiadi; Fête des vignerons.
-        Aida, Carmen, Pagliacci. Čechov e Dalì in compagnia di tanti tanti Rinoceronti ed Elefanti.
+        cresciuto in Ticino, cittadino del mondo. Cirque du Soleil, Olimpiadi, Fête des Vignerons.
+        <span className="italic"> Aida, Carmen, Pagliacci</span>. Chekhov e Dalì in compagnia di
+        tanti tanti Rinoceronti ed Elefanti.
       </p>
     </div>
   );
