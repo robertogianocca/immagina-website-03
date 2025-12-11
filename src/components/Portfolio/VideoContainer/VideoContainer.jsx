@@ -92,7 +92,7 @@ export default function VideoContainer() {
             <PortfolioNavigation
               title={"Video"}
               longDescription={
-                "Realizziamo corto e lungometraggi indipendenti. Realizziamo videoclip per musicisti, documentari per artisti e manifestazioni culturali. Anche matrimoni per persone simpatiche. Per imprenditori simpatici e con umore produciamo volontieri spot pubblicitari, simpatici e… naturalmente estendiamo il team ai nostri collaboratori per prestar servizi quali riprese, riprese con droni, montaggio, post-produzione, prise de son, produzione di colonne sonore, eccetera eccetera."
+                "Realizziamo corto e lungometraggi indipendenti. Realizziamo videoclip per musicisti, documentari per artisti, musei e manifestazioni culturali. Anche matrimoni per persone simpatiche. Per imprenditori con umore produciamo volontieri filmati pubblicitari e naturalmente estendiamo il team ai nostri collaboratori per prestar servizi quali riprese, riprese con droni, montaggio, post-produzione, prise de son, produzione di colonne sonore, eccetera eccetera."
               }
               path={""}
               pathTree={["", ""]}
